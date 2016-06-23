@@ -1,0 +1,17 @@
+body {
+	background-color: #2a42a5;
+	color: white;
+}
+
+.button {
+	width: 100%;
+	background-color: transparent;
+	border: solid 2px white;
+}
+
+.button:hover {
+	width: 100%;
+	background-color: white;
+	/*	border: solid 2px black;*/
+	color: black;
+}
