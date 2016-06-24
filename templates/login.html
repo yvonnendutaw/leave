@@ -1,53 +1,25 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Leave Management System</title>
-	<link rel="stylesheet" href="/static/foundation.css">
-	<link rel="stylesheet" href="/static/app.css">
-</head>
-
-<body>
-	<div class="row text-center">
-		<div class="large-4 large-centered columns">
-			<h3>Please Login</h3>
-		</div>
+{%extends 'base.html' %} {% block content %}
+<div class="row text-center">
+	<div class="large-4 large-centered columns">
+		<h3>Please Login</h3>
 	</div>
+</div>
 
-	<div class="row">
-		<div class="large-4 large-centered columns">
+<div class="row">
+	<div class="large-4 large-centered columns">
 
+		<div class="container">
 			<form action="" method="post">
-				<div class="row">
-					<div class="small-12 large-12 columns">
-						<input type="text" placeholder="Username" name="username" value="{{
+				<input type="text" placeholder="Username" name="username" value="{{
           request.form.username }}">
-						<input type="password" placeholder="Password" name="password" value="{{
+				<input type="password" placeholder="Password" name="password" value="{{
           request.form.password }}">
-					</div>
-				</div>
 
-				<div class="row">
-					<div class=" small-12 large-12 columns">
-
-						<a href="" class="button">Submit</a>
-					</div>
-				</div>
+				<input class="button" type="submit" value="Login">
 
 			</form>
-			{% if error %}
-			<p class="error"><strong>Error:</strong> {{ error }}</p>
-			{% endif %}
+
 		</div>
 	</div>
-
-	<!--- <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>-->
-</body>
-
-</html>
+</div>
+{% endblock %}

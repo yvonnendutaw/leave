@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Leave Management System</title>
+	<link rel="stylesheet" href="/static/foundation.css">
+	<link rel="stylesheet" href="/static/app.css">
+</head>
+
+<body>
+	<div class="row large-12 columns text-center">
+	<h3>Welcome to the leave management system!</h3>
+		{% block content %}{% endblock %} {% if error %}
+		<p class="error"><strong>Error:</strong> {{ error }}</p>
+		{% endif %} {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
+	</div>
+</body>
+
+</html>
