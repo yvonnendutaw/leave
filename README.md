@@ -13,4 +13,4 @@ To run this project use `app.py` file in the root folder
 
 **More:**
 
-This is meant to just give you a brief exaple of what flask can do
+This is meant to just give you a brief example of what flask can do
